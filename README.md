@@ -1,7 +1,7 @@
 # Power-Loss-Recovery
 Power Loss Recorevy For Klipper
 
-#Tested with Cura
+# Tested with Cura
 Read carefully plr.cfg
 In your Slicer
 
@@ -25,6 +25,6 @@ In printer.cfg or here you need:
 
 filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
-#Change permissions on plr.sh: sudo chmod +x plr.sh
+# Change permissions on plr.sh: sudo chmod +x plr.sh
 
-#NOTES: PATH FILE MUST BE THE SAME IN BOTH PLR FILES AND PUTTY
+# NOTES: PATH FILE MUST BE THE SAME IN BOTH PLR FILES AND PUTTY
