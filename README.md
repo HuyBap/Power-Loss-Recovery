@@ -1,7 +1,6 @@
 # Power-Loss-Recovery
 Power Loss Recorevy For Klipper
 
-# Tested with Cura
 Read carefully plr.cfg
 In your Slicer
 
@@ -13,9 +12,9 @@ at every layer add gcode macro: LOG_Z
 
 (in Cura add post processing script "Insert at layer Change" and insert "After", G-code: LOG_Z )
 
-copy plr.sh in /home/mks/printer_data/config/scripts/ 
+copy plr.sh in /home/pi/printer_data/config/scripts/ 
 
-in putty: chmod +x /home/mks/printer_data/config/scripts/plr.sh
+in putty: chmod +x /home/pi/printer_data/config/scripts/plr.sh
 
 in Kiauh install Gcode Shell Command
 
@@ -27,4 +26,4 @@ filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
 Change permissions on plr.sh: sudo chmod +x plr.sh
 
-# NOTES: PATH FILE MUST BE THE SAME IN BOTH PLR FILES AND VIRTUAL CARD IN KLIPPER.
+# NOTES: add these files somewhere that klipper can access them. ~/. should be a fine choice, if you have no idea. You must then add an [include] directive in order to add the contents of plr.cfg to your printer.cfg, or just paste it in if you don't like [include] directives, plr.sh must be marked executable. Also, plr.cfg and plr.sh must be modified to reflect the location of your virtual sdcard in Klipper.
