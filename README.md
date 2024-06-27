@@ -22,6 +22,4 @@ In printer.cfg or here you need:
 
 filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
-Change permissions on plr.sh: sudo chmod +x plr.sh
-
 Add these files somewhere that klipper can access them. ~/. should be a fine choice, if you have no idea. You must then add an [include] directive in order to add the contents of plr.cfg to your printer.cfg, or just paste it in if you don't like [include] directives, plr.sh must be marked executable. Also, plr.cfg and plr.sh must be modified to reflect the location of your virtual sdcard in Klipper.
