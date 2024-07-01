@@ -1,6 +1,6 @@
 # Power-Loss-Recovery
 Power Loss Recorevy For Klipper
-
+# Test with Cura
 Read carefully plr.cfg
 In your Slicer
 
